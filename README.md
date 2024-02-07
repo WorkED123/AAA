@@ -41,6 +41,18 @@
   
 </ul>
 
+<h2>NICE Framework KSAs</h2>
+
+<ul>
+<li>K0001 - Knowledge of computer networking concepts, protocols, and network security methodologies.</li><br>
+<li>K0004 - Knowledge of cybersecurity principles.</li><br>
+<li>K0007 - Knowledge of authentication, authorization, and access control methods.</li><br>
+<li>K0019 - Knowledge of cryptography and cryptographic key management concepts.</li><br>
+<li>K0036 - Knowledge of human-computer interaction principles.</li><br>
+<li>K0044 - Knowledge of cybersecurity principles and organizational requirements.</li>
+
+</ul>
+
 
 
 <h2>Lesson Prerequisites</h2>
@@ -57,7 +69,7 @@
 
 <ins>Definition</ins>: Authentication is verifying the identity of a user, system, or application trying to access a resource.
 
-<h4>Examples</h4>
+<h4>Examples:</h4>
 <ul>
 	<li><ins>Usernames and Passwords</ins>: The most common form of authentication. When you log into a system, your username identifies who you are, and your password validates that you are that person.</li><br>
 	<li><ins>Biometrics</ins>: Using physical characteristics like fingerprints, retina scans, or voice recognition.</li><br>
@@ -72,7 +84,7 @@
 
 <ins>Definition:</ins> Once authenticated, authorization is the process that determines what the user, system, or application is allowed to do.
 
-<h4>Examples</h4>
+<h4>Examples:</h4>
 <ul>
 	<li><ins>Access Control Lists (ACLs):</ins> Specify which users or systems are granted or denied access to particular resources.</li><br>
 	<li><ins>Role-based Access Control (RBAC)</ins>: Users are given roles that define what actions they can perform or what data they can access.</li><br>
@@ -88,7 +100,7 @@
 
 <ins>Definition:</ins> Accounting involves tracking and recording what the authenticated and authorized user does during their session. It's the process of keeping a log of all activities.
 
-<h4>Examples</h4>
+<h4>Examples:</h4>
 <ul>
 	<li><ins>Network Logs</ins>: Records of which user accessed which resources, at what time, and for how long.</li><br>
 	<li><ins>Billing Systems</ins>: In cloud services, accounting might track resource usage to bill customers accurately.</li><br>
