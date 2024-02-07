@@ -1,17 +1,15 @@
-<h1> Lesson 18.2: Machine Learning and Artificial Intelligence  </h1>
+<h1> Lesson 1.3: Authentication, Authorization, and Accounting (AAA)   </h1>
 <h2> Summary</h2>
 
-<p1>In this lesson students will examine the emerging technology of AI and machine learning and how it relates to the cyber landscape..</p1>
+<p1>By the end of this lesson, students should be able to define and understand the concepts of authentication, authorization, and accounting and their significance in cybersecurity.</p1>
 <br>
 
 <h2>Learning Objectives</h2>
 <ul>
-<li>Contrast Narrow AI and AGI.</li>
+<li>Compare and contrast identity and access management concepts.</li>
   <br>
-<li>Know cybersecurity applications of AI and Machine Learning.</li><br>
+<li>Understanding Trust.</li>
   
-<li>Give an example of Narrow AI.</li>
-
 </ul>
 
 <h2>Vocabulary and Acronyms</h2>
@@ -19,121 +17,115 @@
 <ul>
 <li>
 
-  **Artificial Intelligence - AI**</li>
+  **AAA Framework**</li>
   
 <li>
 
-**Machine Learning**</li>
+**SSO**</li>
   
 <li>
   
-**Algorithms**</li>
-  
+**Authentication**</li>
 
+<li>
+
+**Accounting**</li>
+
+<li>
+	
+**Authorization**</li>
+
+<li>
+	
+**2FA**</li>
+  
 </ul>
 
 
 
 <h2>Lesson Prerequisites</h2>
-<p1>Any topical or subject matter to prepare for the lesson. In Advanced Cyber Lessons, previous Lessons can be referenced. </p1>
+<p1>Previous experience with or understanding of cybersecurity is optional. We assume basic familiarity with computing and technology. </p1>
 <br>
 
 
-<h2>What is Machine Learning?</h2>
+<h2>Introduction</h2>
+<p1>The digital world is teeming with data, and with that comes the necessity to secure it. A significant security aspect is ensuring that only the right people can access the right resources. But how is this accomplished? Through three primary security fundamentals: Authentication, Authorization, and Accounting, often abbreviated as AAA.</p1>
+
+
+
+<h2>Authentication</h2>
+
+<ins>Definition</ins>: Authentication is verifying the identity of a user, system, or application trying to access a resource.
+
+<h4>Examples</h4>
 <ul>
-	<li>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the development of computer programs that can access data and use it to learn for themselves. </li><br>
-	<li>The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look for patterns in data and make better decisions in the future based on the examples that we provide.  
-</li><br>
-	<li>The primary aim is to allow the computers to learn automatically without human intervention or assistance and adjust actions accordingly. But, using the classic algorithms of machine learning, text is considered as a sequence of keywords; instead, an approach based on semantic analysis mimics the human ability to understand the meaning of a text. </li><br>
+	<li><ins>Usernames and Passwords</ins>: The most common form of authentication. When you log into a system, your username identifies who you are, and your password validates that you are that person.</li><br>
+	<li><ins>Biometrics</ins>: Using physical characteristics like fingerprints, retina scans, or voice recognition.</li><br>
+	<li><ins>Token-based authentication</ins>: To prove identity using a physical device, such as a smart card or security token.</li><br>
+	<li><ins>Multifactor authentication (MFA)</ins>: Combines two or more forms of authentication for added security.</li>
+</ul>
+
+<ins>Importance:</ins> Without proper authentication, anyone can claim to be anyone else, leading to potential breaches, data theft, and other malicious activities.
+
+
+<h2>Authorization</h2>
+
+<ins>Definition:</ins> Once authenticated, authorization is the process that determines what the user, system, or application is allowed to do.
+
+<h4>Examples</h4>
+<ul>
+	<li><ins>Access Control Lists (ACLs):</ins> Specify which users or systems are granted or denied access to particular resources.</li><br>
+	<li><ins>Role-based Access Control (RBAC)</ins>: Users are given roles that define what actions they can perform or what data they can access.</li><br>
+	<li><ins>File Permissions</ins>: In an operating system, you can read a file but not modify or delete it.</li>
 	
 </ul>
 
-<h2>Machine Learning Algorithms</h2>
+<ins>Importance:</ins>Authorization ensures that authenticated entities only access what they are supposed to, protecting data and resources from unauthorized access or manipulation.
 
+
+
+<h2>Accounting</h2>
+
+<ins>Definition:</ins> Accounting involves tracking and recording what the authenticated and authorized user does during their session. It's the process of keeping a log of all activities.
+
+<h4>Examples</h4>
 <ul>
-	<li>Machine learning algorithms are often categorized as <ins>supervised or unsupervised</ins>. </li><br>
-	<li><ins>Supervised machine:</ins> 
-			<ul>
-			<li>Learning algorithms can apply what has been learned in the past to new data using labeled examples to predict future events. Starting from the analysis of a known training dataset, the learning algorithm produces an inferred function to make predictions about the output values. The system is able to provide targets for any new input after sufficient training. The learning algorithm can also compare its output with the correct, intended output and find errors in order to modify the model accordingly.</li>
-		</ul>
-
-<li><ins>Unsupervised machine:</ins> 
+	<li><ins>Network Logs</ins>: Records of which user accessed which resources, at what time, and for how long.</li><br>
+	<li><ins>Billing Systems</ins>: In cloud services, accounting might track resource usage to bill customers accurately.</li><br>
+	<li><ins>Audit Trails</ins>: Detailed records that can be analyzed later to understand user behavior or trace back in case of a security incident.</li>
 	
-<ul>
-		<li>Learning algorithms are used when the information used to train is neither classified nor labeled. Unsupervised learning studies how systems can infer a function to describe a hidden structure from unlabeled data. The system doesn’t figure out the right output, but it explores the data and can draw inferences from datasets to describe hidden structures from unlabeled data.</li>
-		</ul
- <li><ins>Semi-supervised machine:</ins> 
-	 <ul>
-		 <li>Learning algorithms fall somewhere in between supervised and unsupervised learning, since they use both labeled and unlabeled data for training – typically a small amount of labeled data and a large amount of unlabeled data. The systems that use this method are able to considerably improve learning accuracy. Usually, semi-supervised learning is chosen when the acquired labeled data requires skilled and relevant resources in order to train it / learn from it. Otherwise, acquiring unlabeled data generally doesn’t require additional resources.</li>
-	 </ul>
- </li>
-<li><ins>Reinforcement machine</ins>
-	<br>
-	<ul>
-		<li>Learning algorithms is a learning method that interacts with its environment by producing actions and discovers errors or rewards. Trial and error search and delayed reward are the most relevant characteristics of reinforcement learning.</li><br>
-	</ul>
-	
-<li>This method allows machines and software agents to automatically determine the ideal behavior within a specific context in order to maximize its performance. Simple reward feedback is required for the agent to learn which action is best; this is known as the reinforcement signal. </li><br>
-<li>Machine learning enables analysis of massive quantities of data. While it generally delivers faster, more accurate results in order to identify profitable opportunities or dangerous risks, it may also require additional time and resources to train it properly. Combining machine learning with AI and cognitive technologies can make it even more effective in processing large volumes of information.</li>
- </ul>
-
-
- <h2>What is Artificial Intelligence?</h2>
- <ul>
-	 <li>Artificial intelligence (AI) is a wide-ranging branch of computer science concerned with building smart machines capable of performing tasks that typically require human intelligence. </li> <br>
-	 <li>AI is an interdisciplinary science with multiple approaches, but advancements in machine learning and deep learning are creating a paradigm shift in virtually every sector of the tech industry. </li><br>
-	 <li>The major limitation in defining AI as simply "building machines that are intelligent" is that it actually doesn't </li><br>
-	 <li>While these definitions may seem abstract to the average person, they help focus the field as an area of computer science and provide a blueprint for infusing machines and programs with machine learning and other subsets of artificial intelligence. AI falls under two broad categories: </li><br>
-	 <li>Narrow AI: Sometimes referred to as "Weak AI," this kind of artificial intelligence operates within a limited context and is a simulation of human intelligence. Narrow AI is often focused on performing a single task extremely well and while these machines may seem intelligent, they are operating under far more constraints and limitations than even the most basic human intelligence. </li><br>
-	 <li>Artificial General Intelligence (AGI): AGI, sometimes referred to as "Strong AI," is the kind of artificial intelligence we see in films like robots androids. AGI is a machine with general intelligence and, much like a human being, it can apply that intelligence to solve any problem. </li>
- </ul>
-
-
-<h2>Machine Learning and Cybersecurity</h2>
-It’s important to understand that machine learning is not a panacea, but it can provide a great deal of support to a cybersecurity or IT team. While ML may have a long way to go before it can be used for threat detection on its own without human intervention, there are many tasks it can handle to level up security. <br>
-
-<h3>Some benefits of ML include:</h3>
-
-<ul>
-	<li><ins>Classification</ins> 
-		
-<ul>
-  <li>Programs classify data based on predetermined parameters.</li>
-  </ul>
-  
-<li><ins>Clustering</ins>
- <ul>
-  <li>For data that doesn’t fit preset parameters, ML groups data based on their similarities or anomalies.</li>
-  </ul>
-	<li><ins>Recommendations</ins> 
-		<ul>
-  <li>Programs learn from past choices, inputs and associations to recommend approaches and decisions.</li>
-  </ul>
-	<li><ins>Generative frameworks</ins>
-		<ul>
-  <li>Based on past data inputs, programs generate possibilities that can be applied to data that hadn’t encountered those specific inputs before.</li>
-  </ul>
-	<li><ins>Predictions</ins> 
-		<ul>
-  <li>Programs forecast based on data sets and past outcomes.</li>
-		</ul>
 </ul>
 
+<ins>Importance:</ins> Accounting provides an audit trail that can be crucial for understanding user behavior, troubleshooting issues, or investigating a security breach.
 
 
-<h2>Conclusion</h2>
+<h2>Network Equipment and Services Protection</h2>
+As we protect our data and applications, we must safeguard our network equipment and services. Network intruders often target routers, switches, and other devices. By employing AAA principles at the network level, we ensure only authorized personnel can make changes, monitor network activity, and access critical resources.
 
-AI and ML are becoming integral to cybersecurity, and already are in many ways. While they can be used at different levels and capacities, there are algorithms and techniques that can make an organization's security run more smoothly and free up a security team’s time for other important tasks.
 
+<h2>Varying Levels of Security</h2>
+While the AAA framework provides a solid foundation, different situations may require different levels of security. Some environments require additional layers of protection, like MFA, while others might just need a simple username and password. It's crucial to assess the security needs of each scenario and apply the appropriate combination of AAA technologies.
+
+<h2>Conculsion</h2>
+
+To achieve absolute security, it's essential to implement Authentication, Authorization, and Accounting properly. By understanding and applying these three pillars, we can ensure that our digital systems, resources, and data remain secure, accessible only by those with the correct permissions, and continuously monitored for suspicious activity.
+
+		 
 
 
 <h2> Presentation</h2>
 
-<a href="https://docs.google.com/presentation/d/1DOIEpOQXTDK7qWWfVAHIWJN1cl16HsN2/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> Blockchain and Cryptocurrency</a>
+<a href="https://docs.google.com/presentation/d/1QsJje-K_u9yx7W-gz3QwT9eCaFgcl2p2/edit?usp=sharing&ouid=110228847857413878764&rtpof=true&sd=true"> AAA and Authentication</a>
 
 
 <h2> Hands-On Labs</h2>
 
-<a href = "https://drive.google.com/file/d/1Vw2j5EedXWBvHjhGMm0xyMLyopgPtZZn/view?usp=sharing"> The Blockchain Game </a>
+
 
 <h2> Additional Resources</h2>
+
+<a href="https://howsecureismypassword.net/"> Password Minder </a> - Password Minder Infomercial featured on Ellen. <br>
+
+<a href ="https://www.professormesser.com/security-plus/sy0-501/aaa-and-authentication/">Professor Messer’s AAA and Authentication </a> - Lecture: AAA and Authentication. <br>
+
+<a href="https://www.professormesser.com/security-plus/sy0-501/identity-and-access-services/"> Professor Messer’s Identity and Access Services</a> - Discuss examples of Something You Are, Something You Have, Something You Know.
