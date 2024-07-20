@@ -122,21 +122,21 @@ While the AAA framework provides a solid foundation, different situations may re
 
 To achieve absolute security, it's essential to implement Authentication, Authorization, and Accounting properly. By understanding and applying these three pillars, we can ensure that our digital systems, resources, and data remain secure, accessible only by those with the correct permissions, and continuously monitored for suspicious activity.
 
-<h2>Vocabulary</h2>
+<h2>Definitions</h2>
+<ul>
+<li><b>AAA Framework:</b> A security framework for controlling access to computer resources, consisting of Authentication, Authorization, and Accounting.<br>
+<br>
+<li><b>SSO (Single Sign-On):</b> An authentication process that allows a user to access multiple applications with one set of login credentials.<br>
+<br>
+<li><b>Authentication:</b> The process of verifying the identity of a user or system.<br>
+<br>
+<li><b>Accounting:</b> The process of tracking and recording user activities and resource usage in a system.<br>
+<br>
+<li><b>Authorization:</b> The process of determining what resources and actions a user or system is permitted to access or perform.<br>
+<br>
+<li><b>2FA (Two-Factor Authentication):</b>f An additional layer of security requiring not only a password and username but also something that only the user has on them, such as a physical token or mobile phone, to verify their identity.
 
-<b>AAA Framework:</b> A security framework for controlling access to computer resources, consisting of Authentication, Authorization, and Accounting.
-
-<b>SSO (Single Sign-On):</b> An authentication process that allows a user to access multiple applications with one set of login credentials.
-
-<b>Authentication:</b> The process of verifying the identity of a user or system.
-
-<b>Accounting:</b> The process of tracking and recording user activities and resource usage in a system.
-
-<b>Authorization:</b> The process of determining what resources and actions a user or system is permitted to access or perform.
-
-<b>2FA (Two-Factor Authentication):</b>f An additional layer of security requiring not only a password and username but also something that only the user has on them, such as a physical token or mobile phone, to verify their identity.
-
-		 
+</ul>		 
 
 
 <h2> Presentation</h2>
